@@ -9,7 +9,7 @@
     <servlet-name>TimeServlet</servlet-name>
     <servlet-class>servlets.TimeServlet</servlet-class>
   </servlet>
-  
+
   <servlet-mapping>
     <servlet-name>TimeServlet</servlet-name>
     <url-pattern>/minsk</url-pattern>
