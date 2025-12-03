@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 
 @WebServlet("/CheckAge")
 
-public class AgeServlet extends HttpServlet {
+public class CheckAge extends HttpServlet {
     /*Создать сервлет который на вход принимает возраст, а в ответе возвращает
     информацию, совершеннолетний или нет*/
     private static final int MIN_AGE = 18;
