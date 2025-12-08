@@ -16,11 +16,10 @@ public class BookDownloadServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String appPath = getServletContext().getRealPath("");
-        String bookPath = appPath + "WEB-INF" + File.separator + "books" + File.separator + BOOK_FILENAME;
+        String uploadPath = getServletContext().getRealPath("") + File.separator + "uploaded_books";
+        String bookPath = uploadPath + File.separator + BOOK_FILENAME;
 
         File file = new File(bookPath);
-
 
         if (!file.exists()) {
             response.sendError(HttpServletResponse.SC_NOT_FOUND, "Книга не найдена на сервере.");

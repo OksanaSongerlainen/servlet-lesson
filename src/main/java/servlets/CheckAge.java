@@ -17,7 +17,8 @@ public class CheckAge extends HttpServlet {
     private static final int MIN_AGE = 18;
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
         resp.setContentType("text/html");
 
         PrintWriter out = resp.getWriter();

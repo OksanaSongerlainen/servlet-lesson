@@ -3,6 +3,7 @@
         "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+
   <display-name>World Time Application</display-name>
 
   <servlet>
@@ -25,8 +26,4 @@
     <url-pattern>/beijing-xml</url-pattern>
   </servlet-mapping>
 
-
-  <listener>
-    <listener-class>servlets.StartupListener</listener-class>
-  </listener>
-  </web-app>
+   </web-app>
