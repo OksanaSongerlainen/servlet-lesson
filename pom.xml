@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example</groupId>
   <artifactId>servlet-lesson</artifactId>
@@ -8,8 +8,13 @@
   <name>servlet-lesson Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
-  <dependencies>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source> <!-- или 17, или 21 для Tomcat 11 -->
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
 
+  <dependencies>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
@@ -28,11 +33,13 @@
   <build>
     <finalName>servlet-lesson</finalName>
     <plugins>
+
       <plugin>
-                 <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-war-plugin</artifactId>
-          <version>3.5.0</version>
-            </plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.5.0</version>
+
+      </plugin>
     </plugins>
   </build>
 </project>
